@@ -16,8 +16,6 @@ interface ContentHeaderProps {
 const ContentHeader: FC<ContentHeaderProps> = ({
   conversation,
   setActiveSetting,
-  setShowPrompt,
-  setText,
 }) => {
   const { i18n, isMobile, currentId, setCurrentId, setConversations } =
     useContext(GlobalContext);
@@ -66,17 +64,6 @@ const ContentHeader: FC<ContentHeaderProps> = ({
             }}
           />
         </Tooltip>
-        {conversation.mode === 'image' ? null : (
-          <Tooltip title={i18n.action_prompt}>
-            <ConfigIcon
-              name="ri-user-add-line mr-2"
-              onClick={() => {
-                setText('/');
-                setShowPrompt(true);
-              }}
-            />
-          </Tooltip>
-        )}
         <ConfigIcon
           name="ri-settings-3-line"
           onClick={() => setActiveSetting((active) => !active)}

@@ -30,7 +30,7 @@ const MessageInput: FC<{
   loading,
 }) => {
   const { i18n, currentId } = useContext(GlobalContext);
-  const [promptKeyword, setPromptKeyword] = useState('');
+  const [promptKeyword] = useState('');
   const [isInputComposition, setIsInputComposition] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   // textarea ref

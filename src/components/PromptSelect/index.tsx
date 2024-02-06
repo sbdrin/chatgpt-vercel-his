@@ -23,11 +23,11 @@ const PromptSelect: FC<{
       let promptList: Prompt[] = [];
       if (!lang) return;
       try {
-        if (lang === 'zh') {
-          promptList = (await import('prompts/prompt_zh.json')).default;
-        } else {
-          promptList = (await import('prompts/prompt_en.json')).default;
-        }
+        // if (lang === 'zh') {
+        //   promptList = (await import('prompts/prompt_zh.json')).default;
+        // } else {
+        //   promptList = (await import('prompts/prompt_en.json')).default;
+        // }
       } catch (e) {
         promptList = [];
       }
