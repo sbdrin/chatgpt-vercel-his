@@ -87,13 +87,13 @@ const MessageInput: FC<{
             onChange={(event) => {
               const val = event.target.value;
               setText(val);
-              if (val.startsWith('/')) {
-                setShowPrompt(true);
-                setPromptKeyword(val.slice(1));
-              } else {
-                setShowPrompt(false);
-                setPromptKeyword('');
-              }
+              // if (val.startsWith('/')) {
+              //   setShowPrompt(true);
+              //   setPromptKeyword(val.slice(1));
+              // } else {
+              //   setShowPrompt(false);
+              //   setPromptKeyword('');
+              // }
             }}
             onCompositionStart={() => setIsInputComposition(true)}
             onCompositionEnd={() => setIsInputComposition(false)}

@@ -30,7 +30,7 @@ const Main: FC<{ lang: Lang; inVercel: boolean }> = ({ lang, inVercel }) => {
   // gloabl configs
   const [configs, setConfigs] = useState<Partial<GlobalConfig>>({});
 
-  const i18n = getI18n(configs.lang ?? lang ?? 'en');
+  const i18n = getI18n(configs.lang ?? lang ?? 'zh');
 
   // chat informations
   const [currentId, setCurrentId] = useState<string>(defaultConversation.id);

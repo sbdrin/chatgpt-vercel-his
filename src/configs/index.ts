@@ -49,7 +49,7 @@ export const layoutConfig = ['full', 'loose', 'default'] as const;
 
 export type LayoutConfig = (typeof layoutConfig)[number];
 
-export const defaultLayoutConfig: LayoutConfig = 'default';
+export const defaultLayoutConfig: LayoutConfig = 'full';
 
 export const defaultGloablConfig: GlobalConfig = {
   password: '',
@@ -62,7 +62,7 @@ export const defaultGloablConfig: GlobalConfig = {
   temperature: 1,
   imagesCount: 1,
   imageSize: '256x256',
-  lang: 'en',
+  lang: 'zh',
   discordChannelId: '',
   discordServerId: '',
   discordToken: '',
